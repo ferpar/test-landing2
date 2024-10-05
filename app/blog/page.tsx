@@ -7,7 +7,7 @@ export default async function BlogPage() {
   const posts = await res.json()
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-4">
+    <div className="min-h-screen max-w-4xl mx-auto py-12 px-4">
       <h1 className="text-4xl font-bold mb-8">Our Blog</h1>
       <div className="space-y-6">
         {posts.map((post: any) => (
